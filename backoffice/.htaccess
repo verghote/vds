@@ -1,5 +1,4 @@
-# AuthUserFile /home/verghote/www/backoffice/.htpasswd
-AuthUserFile i:/ppe/backoffice/.htpasswd
+AuthUserFile j:/VirtualHostSlam/vds/backoffice/.htpasswd
 AuthName "Accès administration"
 AuthType Basic
 require user admin

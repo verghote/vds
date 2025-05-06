@@ -3,7 +3,7 @@
 import {
     afficherErreur,
     confirmer,
-    genererMessage
+    genererMessage, ajax
 } from "https://verghote.github.io/composant/fonction.js";
 
 /* global data */

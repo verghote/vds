@@ -15,6 +15,8 @@ $login = $_POST["login"];
 $password = $_POST["password"];
 $memoriser = intval($_POST["memoriser"]);
 
+
+
 // vérification du login
 if (!preg_match('/^[a-zA-Z]{2,}$/', $login)) {
     Tentative::enregistrer($login, $password);
