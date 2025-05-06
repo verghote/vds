@@ -1,0 +1,48 @@
+<div class="formulaire" style="width: 42rem">
+    <div id="msg" class="m-1 erreur"></div>
+    <div class="row text-center">
+        <h1>Personnaliser votre mot de passe</h1>
+        <div class="col-12 col-sm-7" style="text-align:left">
+
+
+            <label for="password" class="obligatoire col-form-label">
+                Nouveau mot de passe
+            </label>
+            <input type="password" id="password" style="width: 300px"
+                   required
+                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$"
+                   minlength="8"
+                   class="form-control"
+                   autocomplete="off">
+
+            <label for="confirmation" class="obligatoire col-form-label">
+                Confirmation du mot de passe
+            </label>
+            <input type="password" id="confirmation" style="width: 300px"
+                   required
+                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$"
+                   minlength="8"
+                   class="form-control"
+                   autocomplete="off">
+
+                <button id='btnValider' style="width: 300px;" class="mt-3 btn btn btn-danger text-white ">Modifier</button>
+        </div>
+        <div class="col-12 col-sm-5 d-flex flex-column justify-content-center  align-items-center d-sm-none d-md-block "
+             style="text-align: justify; font-style: italic; font-size: 0.8rem">
+            <p class="my-3">
+                Pour des raisons de sécurité, nous vous recommandons de changer régulièrement votre mot de passe.
+            </p>
+            <li id="majusc">Au moins une majuscule</li>
+            <li id="minusc">Au moins une minuscule</li>
+            <li id="digit">Au moins un chiffre</li>
+            <li id="special">Au moins un caractère spécial</li>
+            <li id="length">Au Minimum 8 caractères</li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+

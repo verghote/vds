@@ -1,0 +1,27 @@
+<label class='col-form-label visually-hidden ' for="journal">Journal </label>
+<div class="d-flex flex-row justify-content-evenly">
+    <select id="journal" class="form-select" style="width: 350px"></select>
+    <div id="compteur"></div>
+    <button id="btnSupprimer" class="btn btn-sm btn-outline-danger d-inline-flex align-items-center">
+        <i class="bi bi-trash3 "></i>
+        Vider le journal
+    </button>
+    <button id="btnExporter" class="btn btn-sm btn-outline-success d-inline-flex align-items-center">
+        <i class="bi bi-trash3 "></i>
+        Exporter CSV
+    </button>
+</div>
+<div id="msg" class="my-3"></div>
+<div id="table" class="m-1"></div>
+
+<!-- Fenêtre modale pour la confirmation de suppression -->
+<div id="confirmationModal"
+     style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background-color:rgba(0,0,0,0.6); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+        <p>Êtes-vous sûr de vouloir supprimer tous les événements ?</p>
+        <div style="margin-top:20px;">
+            <button id="btnConfirmerSuppression" class="btn btn-success me-2">Oui</button>
+            <button id="btnAnnulerSuppression" class="btn btn-danger">Non</button>
+        </div>
+    </div>
+</div>

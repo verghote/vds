@@ -1,0 +1,33 @@
+<div class="formulaire" style="width: 42rem">
+    <div id='zoneSaisie'>
+        <h4 class="text-center  text-secondary">
+            Mot de passe oublié
+        </h4>
+        <div id="msg" class="m-1 erreur"></div>
+        <label class='' for="login">Entrez votre login, nous allons vous envoyer par mail un lien pour
+            réinitialiser votre mot de passe.</label>
+        <input id="login" type="text" style="max-width: 350px"
+               required
+               pattern="^[a-zA-Z][a-zA-Z]{2,19}[0-9]?$"
+               class="form-control"
+               autocomplete="off">
+        <div class="text-center mt-3">
+            <button id='btnEnvoyer' class='btn btn-danger rounded-pill '>Envoyer</button>
+        </div>
+    </div>
+    <div id="zoneReponse" style="display: none;">
+        <h4 class="text-center  text-secondary">
+            Demande de réinitialisation de mot de passe
+        </h4>
+        <p style="text-align: justify">
+            Un lien de réinitialisation de votre mot de passe vous a été envoyé sur votre adresse email.
+        </p>
+        <p>
+            Si vous ne recevez pas cet e-mail, vérifiez vos courriers indésirables
+        </p>
+        <div class="text-center mt-3">
+            <a href="/" class="link">Page d'accueil du site</a>
+        </div>
+    </div>
+</div>
+

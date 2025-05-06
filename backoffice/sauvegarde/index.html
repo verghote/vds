@@ -1,0 +1,30 @@
+<div style="max-width: 450px; margin: 0 auto;">
+
+    <div id="msg" class="m-1 erreur"></div>
+    <div class="d-flex justify-content-evenly m-3">
+        <a href="sauvegarder.php" class="btn btn-sm btn-outline-primary m-2">
+            Nouvelle sauvegarde
+        </a>
+        <button id="btnSupprimerTous" class="btn btn-sm btn-outline-danger m-2 ">Supprimer toutes les sauvegardes</button>
+    </div>
+    <table class=''>
+        <thead>
+        <tr>
+            <th style='width: 150px; text-align: center'>Action</th>
+            <th style='width: 300px'>Sauvegarde</th>
+        </tr>
+        </thead>
+        <tbody id="lesLignes"></tbody>
+    </table>
+</div>
+
+<div id="confirmationModal"
+     style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background-color:rgba(0,0,0,0.6); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+        <p>Êtes-vous sûr de vouloir supprimer toutes les sauvegardes ?</p>
+        <div style="margin-top:20px;">
+            <button id="btnConfirmerSuppression" class="btn btn-success me-2">Oui</button>
+            <button id="btnAnnulerSuppression" class="btn btn-danger">Non</button>
+        </div>
+    </div>
+</div>

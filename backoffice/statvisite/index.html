@@ -1,0 +1,31 @@
+<div style="display: grid; grid-template-columns: repeat(5, 1fr); text-align: center; gap: 1em; margin: auto; max-width: 900px;">
+    <div>
+        <div>Total de visites</div>
+        <div id="total" style="font-weight: bold"></div>
+    </div>
+    <div>
+        <div>Moyenne journalière</div>
+        <div id="moyenne" style="font-weight: bold"></div>
+    </div>
+    <div>
+        <div>Plus forte affluence</div>
+        <div id="max" style="font-weight: bold"></div>
+    </div>
+    <div>
+        <div>Plus basse affluence</div>
+        <div id="min" style="font-weight: bold"></div>
+    </div>
+    <div>
+        <div></div>
+        <div>
+            <button id="btnExporter" class="btn btn-sm btn-outline-success d-inline-flex align-items-center">
+                <i class="bi bi-trash3 "></i>
+                Exporter CSV
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Conteneur centré et contraint -->
+<div style="display: flex; justify-content: center;">
+    <div id="table" style="width: 350px;" class="m-1"></div>
+</div>
