@@ -10,8 +10,4 @@ composer.lock
 
 # Répertoires spécifiques à l'application
 
-# Répertoire de compilation Smarty (à ne pas versionner)
-musicolSmarty/controleur/templates_c/
-
-# Répertoire de cache Smarty (si activé)
-musicolSmarty/controleur/cache/
+backoffice/sauvegarde/sql

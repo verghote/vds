@@ -30,8 +30,22 @@ values ('VERGHOTE', 'GUY', 'guy.verghote@saint-remi.net'),
        ('SUBERU', 'MOUBARAK',  'moubarak.suberu@saint-remi.net'),
        ('TISON', 'CLAIRE',  'claire.tison@saint-remi.net');
 
-update membre set login = 'admin', password = sha2('Admin123!', 256) where id = 1;
--- update membre set login = 'admin', password = sha2('1111', 256) where id = 1;
-update membre set login = 'admin', password = sha2('Test.000', 256) where id = 1;
+INSERT INTO membre (nom, prenom, email)
+VALUES
+    ('BOULLY', 'ALEXANDRE', 'alexandre.boully@saint-remi.net'),
+    ('CAZIN', 'TOM', 'tom.cazin@saint-remi.net'),
+    ('DIANI', 'ISMAEL', 'ismael.diani@saint-remi.net'),
+    ('DUMONT', 'HUGO', 'hugo.dumont@saint-remi.net'),
+    ('DUPRESSOIR', 'MATHIEU', 'mathieu.dupressoir@saint-remi.net'),
+    ('FOULON', 'MATHYS', 'mathys.foulon@saint-remi.net'),
+    ('GARNIER', 'KYLLIAN', 'kyllian.garnier@saint-remi.net'),
+    ('MERCIER', 'ALEXI', 'alexi.mercier@saint-remi.net'),
+    ('VASSEUR', 'LORENZO', 'lorenzo.vasseur@saint-remi.net'),
+    ('YILDIZ', 'MUHAMMEDALI', 'muhammedali.yildiz@saint-remi.net'),
+    ('ZON', 'JEREMY', 'jeremy.zon@saint-remi.net');
 
+
+update membre set login = 'admin', password = sha2('1111', 256) where id = 1;
+-- update membre set login = 'admin', password = sha2('Test.000', 256) where id = 1;
+-- update membre set login = 'admin', password = sha2('Admin123!', 256) where id = 1;
 Select * from membre;

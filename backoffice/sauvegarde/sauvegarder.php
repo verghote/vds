@@ -32,7 +32,7 @@ $lesParametres = [
 
 // lancement de la sauvegarde
 try {
-    $dump = new IMysqldump\Mysqldump("mysql:host=$dbHost;dbname=$dbBase", $dbUser, $dbPassword, $lesParametres);
+    $dump = new IMysqldump\Mysqldump("mysql:host=$dbHost;dbname=$dbBase;charset=utf8mb4", $dbUser, $dbPassword, $lesParametres);
     // le passage de paramètre peut se faire par appel des méthodes
     $dump->start($file);
 // retour sur la page d'accueil du module
