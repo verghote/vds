@@ -34,6 +34,9 @@ if (!file_exists($fichier)) {
 // journalisation de la demande
 Journal::enregistrer($id, 'classement');
 
+//  Comptabilisation de l'appel
+StatPage::comptabiliser();
+
 // afficher le classement à l'écran
 header('Content-Type: application/pdf');
 header("Content-Disposition: filename=$id");

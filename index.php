@@ -2,11 +2,6 @@
 // activation du chargement dynamique des ressources
 require $_SERVER['DOCUMENT_ROOT'] . "/include/autoload.php";
 
-//  Comptabilisation de l'appel
-StatPage::comptabiliser("Accueil");
-
-
-
 // chargement des données
 
 // Chargement des derniers classements présents dans le répertoire 'data/classement'

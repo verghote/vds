@@ -21,8 +21,6 @@ $token = Jeton::creer();
 
 // chargement des données
 
-// comptabilisation de l'appel
-StatPage::comptabiliser("Connexion");
 
 // transmission des données à l'interface
 $head = <<<EOD

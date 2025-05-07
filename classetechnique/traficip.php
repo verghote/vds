@@ -22,7 +22,7 @@ class TraficIp
     private const DUREE_FENETRE = 5;
 
     /** Durée de rétention (en seconde) des traces avant purge */
-    private const DUREE_CONSERVATION = 3600; // 1 heure
+    private const DUREE_CONSERVATION = 600; // 1 heure
 
 
     /**

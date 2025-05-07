@@ -13,6 +13,7 @@ create table traficip
 
 -- Activer l'Event Scheduler
 SET GLOBAL event_scheduler = ON;
+-- SET GLOBAL event_scheduler = OFF;
 
 -- Créer un événement pour nettoyer la table traficip toutes 30 jours
 drop event if exists effacerTraficIp;

@@ -11,9 +11,6 @@ $token = Jeton::creer();
 // chargement des données
 
 
-// comptabilisation de l'appel
-StatPage::comptabiliser("Modification du mot de passe");
-
 // transmission des données à l'interface
 $head = <<<EOD
  <script>
